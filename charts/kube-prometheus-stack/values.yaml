@@ -31,16 +31,16 @@ commonLabels: {}
 ## Create default rules for monitoring the cluster
 ##
 defaultRules:
-  create: true
+  create: false
   rules:
     alertmanager: true
     etcd: true
     general: true
     k8s: true
-    kubeApiserver: true
-    kubeApiserverAvailability: true
-    kubeApiserverError: true
-    kubeApiserverSlos: true
+    kubeApiserver: false
+    kubeApiserverAvailability: false
+    kubeApiserverError: false
+    kubeApiserverSlos: fale
     kubelet: true
     kubePrometheusGeneral: true
     kubePrometheusNodeAlerting: true
